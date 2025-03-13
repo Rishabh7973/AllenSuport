@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CSS slider</title>
+</head>
+<body>
+    <!--remove it when it is fully created-->
+<a name="home"></a>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img src="images/logo.jfif" alt="logo"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a target="_blank" href="grawise.html">AllenSuport</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+    </nav>
+    
+
+    <section class="front">
+        <h1 class="head">Allenhouse Group of Institutions</h1>
+    
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/allenhouse.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/classroom.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/computer lab.jfif" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+    </section>
+<!-- remove it when if fully create-->
+<a name="about"></a>
+
+    <section class="about">
+        <section class="photoes">
+        <img src="images/allenhouse.jpg" alt="image" class="allen1">
+        <img src="images/naac.jfif" alt="image" class="allen2">
+        <img src="images/allen3.jfif" alt="image" class="allen2">
+        <img src="images/allen1.jfif" alt="iamge" class="allen2">
+        <img src="images/allen6.jfif" alt="image" class="allen3">
+        <img src="images/library.jpg" alt="image" class="allen1">
+        <img src="images/bus.jfif" alt="image" class="allen1">
+        <img src="images/classroom.jpg" alt="image" class="allen4">
+        <img src="images/abc.jfif" alt="image" class="allen4">
+        <img src="images/sport.png" alt="image" class="allen6">
+        <img src="images/academic.jpg" alt="image" class="allen5">
+        </section>
+
+        <section class="director1">
+        <div class="dir1Section">
+            <h2 class="dir1Head">From the  Director's Desk</h2>
+            <p class="dir1Content">"Change is the end result of all true learning."Leo buscaglia<br>
+            We, at Allenhouse Group of Institutions, believe that in today's business environment
+            characterized by volatility,<br>uncertainly, complexity and ambiguity, engineers and managers
+            have to learn to update themselves constantly<br>on the front of knowledge, skills and attitude
+            needed to be effective in their organizations.<br>We stand committed to the academic success 
+            and social-emotional well-being <br>of every student of our institutions and welcome you to experience
+            the 'Allen'life!<br><br><font size="4.5">With Best Wishes,</font><br><b>Prof.(Dr) Manoj Misra</b>
+        </p>
+        </div>
+        <div class="dir1Image">
+            <img src="images/dir1.jpg" alt="dir1 image">
+        </div>
+        </section>
+
+        <section class="director1">
+            <div class="dir1Section">
+                <h2 class="dir1Head">From the Director's Desk</h2>
+                <p class="dir1Content">"Learning is creation, not consumption. Knowledge is not something a 
+                learner<br>absords, but something a learner creates."-George Couros<br>With immense pleasure 
+                I welcome you to Allenhouse Group of Institutions. With a mission to nuture talents in this<br>field 
+                of education and help students to meet various challenges we established it in 2009.<br>The college encourages
+                its students to participate in a creative exploration of knowledge involving hands-on<br>activities which
+                provide 'learning by doing' environment far different from exam centric rot-learning.
+                <br><br><font size="4.5">With Best Wishes,</font><br><b>Dr. Rubby Chawla</b>
+            </p>
+            </div>
+            <div class="dir2image">
+                <img src="images/dir3.jfif" alt="dir3 image">
+            </div>
+        </section>
+        
+
+        <section class="picture">
+            <img src="images/last2.jfif" alt="company" class="comp1">
+            <img src="images/last image.jfif" alt="company" class="comp2">
+            <img src="images/last3.jfif" alt="company" class="comp3"
+        </section>
+    </section>
+    
+    
+
+</body>
+</html>
